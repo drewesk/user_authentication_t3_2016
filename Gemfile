@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'bootstrap-generators'
+gem 'record_tag_helper', '~> 1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -33,6 +35,16 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails'
+  gem 'guard-bundler'
+  gem 'guard-rspec'
+  gem 'guard-migrate'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+end
+
+group :test do
+  gem 'capybara'
 end
 
 group :development do
